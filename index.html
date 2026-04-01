@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mnemonika AI | Futuristik Platforma</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- 1-OYNA: XUSH KELIBSIZ -->
+        <div id="welcome-screen" class="screen active">
+            <h1 class="hero-title">MNEMONIKA AI <br> GA XUSH KELIBSIZ</h1>
+            <p style="color: rgba(255,255,255,0.5);">Xotirangizni sun'iy intellekt bilan kuchaytiring</p>
+            <div class="btn-group">
+                <button class="btn btn-outline" onclick="changeScreen('signup-screen')">Ro'yxatdan o'tish</button>
+                <button class="btn btn-filled" onclick="changeScreen('main-screen')">Kirish</button>
+            </div>
+        </div>
+
+        <!-- 2-OYNA: RO'YXATDAN O'TISH -->
+        <div id="signup-screen" class="screen">
+            <h2 style="margin-bottom: 30px; font-family: 'Syncopate';">Yangi hisob yaratish</h2>
+            <div class="form-card">
+                <div class="form-group">
+                    <label>Ism</label>
+                    <input type="text" placeholder="Ismingizni kiriting">
+                </div>
+                <div class="form-group">
+                    <label>Familiya</label>
+                    <input type="text" placeholder="Familiyangizni kiriting">
+                </div>
+                <div class="form-group">
+                    <label>Telefon raqam</label>
+                    <input type="tel" placeholder="+998 90 123 45 67">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="example@mail.com">
+                </div>
+                <div class="form-group full">
+                    <button class="btn btn-filled" style="width: 100%;" onclick="changeScreen('main-screen')">Saqlash va Kirish</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3-OYNA: ASOSIY ISHCHI QISM -->
+        <div id="main-screen" class="screen">
+            <h1 class="huge-title">MNEMONIKA AI</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Ingliz tilidagi so'zni kiriting...">
+                <button class="btn-create" onclick="alert('Mnemonika yaratilmoqda...')">YARATISH</button>
+            </div>
+            <div class="result-grid">
+                <div class="res-item">
+                    <label>So'z</label>
+                    <p style="font-size: 1.3rem;">Magnanimous</p>
+                </div>
+                <div class="res-item" style="border-left-color: var(--neon-blue);">
+                    <label>Mnemonika (AI)</label>
+                    <p>Olijanob insonni "Magna" (katta) va "Animus" (ruh) deb tasavvur qiling.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
